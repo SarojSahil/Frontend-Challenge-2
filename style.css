@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "Sora";
+  src: url("./Sora-VariableFont_wght.ttf");
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Sora";
+}
+
+:root {
+  --dark-purple: #7C19EE;
+  --light-purple: #F2EAFD;
+  --gray: #E5EAF0;
+  --off-white: #FAFAF9;
+  --white: #FFFFFF;
+  --black: #20293A;
+  --dark-gray: #394150;
+
+  --text-xs: 0.625rem;
+  --text-sm: 0.75rem;
+  --text-base: 0.875rem;
+  --text-lg: 1.125rem;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--off-white);
+}
+
+.card {
+  max-width: 336px;
+  background-color: var(--white);
+  border-radius: 0.7rem;
+  box-shadow: 5px 3px 13px var(--gray);
+  margin: 0rem 1rem;
+}
+
+.card-main {
+  padding: 1rem;
+}
+
+.card-main .image {
+  max-width: 100%;
+  border-radius: 0.5rem;
+}
+
+.card-main .tag {
+  font-size: var(--text-xs);
+  padding: 0.2rem 1rem;
+  background: var(--light-purple);
+  display: inline-block;
+  border-radius: 1rem;
+  color: var(--dark-purple);
+  margin: 0.7rem 0rem;
+  font-weight: 700;
+}
+
+.card-main .heading {
+  font-size: var(--text-lg);
+  padding: 0.3rem 0rem;
+  color: var(--black);
+}
+
+.card-main .description {
+  font-size: var(--text-base);
+  color: var(--dark-gray);
+  font-weight: 300;
+}
+
+.card-footer {
+  border-top: 1px solid var(--gray);
+  padding: 1rem;
+}
+
+.card-footer .author {
+  padding: 0.3rem 0rem;
+  font-size: var(--text-sm);
+  color: var(--dark-gray);
+  font-weight: 500;
+}
